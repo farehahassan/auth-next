@@ -1,0 +1,86 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\92336\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add tailwindcss-animate class-variance-authority clsx tailwind-merge lucide-react
+
+PATH: 
+  C:\Users\92336\AppData\Local\npm-cache\_npx\125ee17d583c4e03\node_modules\.bin;C:\Users\92336\OneDrive\Desktop\nextplate\node_modules\.bin;C:\Users\92336\OneDrive\Desktop\node_modules\.bin;C:\Users\92336\OneDrive\node_modules\.bin;C:\Users\92336\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.4.0.0_x64__8wekyb3d8bbwe;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows;C:\Tasm 1.4\Tasm\bin;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Dart\dart-sdk\bin;C:\Program Files\Java\jdk-20\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\92336\AppData\Local\Microsoft\WindowsApps;C:\Users\92336\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\92336\.dotnet\tools;C:\Users\92336\IntelliJ IDEA Community Edition 2022.2.2\bin;C:\Program Files\Java\jdk-20\bin;;C:\Users\92336\AppData\Roaming\npm;C:\src\flutter\bin;C:\Users\92336\AppData\Local\Programs\oh-my-posh\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\92336\OneDrive\Desktop\nextplate\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "nextplate",
+    "version": "1.5.0",
+    "description": "Nextjs and Tailwindcss boilerplate",
+    "author": "zeon.studio",
+    "license": "MIT",
+    "packageManager": "yarn@1.22.19",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "preview": "next start",
+      "postbuild": "next-sitemap",
+      "lint": "next lint",
+      "format": "prettier -w ./src",
+      "generate-json": "node scripts/jsonGenerator.js",
+      "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    },
+    "dependencies": {
+      "date-fns": "^2.30.0",
+      "date-fns-tz": "^2.0.0",
+      "disqus-react": "^1.1.5",
+      "fuse.js": "^7.0.0",
+      "github-slugger": "^2.0.0",
+      "gray-matter": "^4.0.3",
+      "marked": "^10.0.0",
+      "next": "14.0.2",
+      "next-mdx-remote": "^4.4.1",
+      "next-sitemap": "^4.2.3",
+      "next-themes": "^0.2.1",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-gtm-module": "^2.0.11",
+      "react-icons": "^4.11.0",
+      "react-lite-youtube-embed": "^2.3.52",
+      "rehype-slug": "^6.0.0",
+      "remark-gfm": "^3.0.1",
+      "sharp": "^0.32.6",
+      "swiper": "^11.0.4"
+    },
+    "devDependencies": {
+      "@tailwindcss/forms": "^0.5.7",
+      "@tailwindcss/typography": "^0.5.10",
+      "@types/marked": "^5.0.2",
+      "@types/node": "20.9.0",
+      "@types/react": "18.2.37",
+      "@types/react-dom": "18.2.15",
+      "autoprefixer": "^10.4.16",
+      "eslint": "^8.53.0",
+      "eslint-config-next": "14.0.2",
+      "postcss": "^8.4.31",
+      "prettier": "^3.0.3",
+      "prettier-plugin-tailwindcss": "^0.5.7",
+      "sass": "^1.69.5",
+      "tailwind-bootstrap-grid": "^5.0.1",
+      "tailwindcss": "^3.3.5",
+      "typescript": "5.2.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

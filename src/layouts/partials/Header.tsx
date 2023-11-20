@@ -27,6 +27,8 @@ const Header = () => {
   // distructuring the main menu from menu object
   const { main }: { main: INavigationLink[] } = menu;
   const { navigation_button, settings } = config;
+  const { log_in, sign_in } = config.navigation_button;
+
   // get current path
   const pathname = usePathname();
 
@@ -127,16 +129,23 @@ const Header = () => {
               )}
             </React.Fragment>
           ))}
-          {navigation_button.enable && (
-            <li className="mt-4 inline-block lg:hidden">
-              <Link
-                className="btn btn-outline-primary btn-sm"
-                href={navigation_button.link}
-              >
-                {navigation_button.label}
-              </Link>
-            </li>
+          {/* {log_in.enable && (
+            <Link
+              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
+              href={log_in.link}
+            >
+              {log_in.label}
+            </Link>
           )}
+
+          {sign_in.enable && (
+            <Link
+              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
+              href={sign_in.link}
+            >
+              {sign_in.label}
+            </Link>
+          )} */}
         </ul>
         <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
           {settings.search && (
@@ -149,12 +158,21 @@ const Header = () => {
             </Link>
           )}
           <ThemeSwitcher className="mr-5" />
-          {navigation_button.enable && (
+          {log_in.enable && (
+            <Link
+              className="btn btn-outline-primary btn-sm hidden lg:inline-block mr-5"
+              href={log_in.link}
+            >
+              {log_in.label}
+            </Link>
+          )}
+
+          {sign_in.enable && (
             <Link
               className="btn btn-outline-primary btn-sm hidden lg:inline-block"
-              href={navigation_button.link}
+              href={sign_in.link}
             >
-              {navigation_button.label}
+              {sign_in.label}
             </Link>
           )}
         </div>

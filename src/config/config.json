@@ -28,11 +28,17 @@
   },
 
   "navigation_button": {
-    "enable": true,
-    "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
+    "log_in": {
+      "enable": true,
+      "label": "Log In",
+      "link": "/login"
+    },
+    "sign_in": {
+      "enable": true,
+      "label": "Sign In",
+      "link": "/signin"
+    }
   },
-
   "disqus": {
     "enable": true,
     "shortname": "themefisher-template",
